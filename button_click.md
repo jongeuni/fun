@@ -4,7 +4,7 @@
 
 ### 화면
 
-![](C:\Users\user\Desktop\안드 사진 1.JPG)
+![안드 첫 번째 화면](https://user-images.githubusercontent.com/66874658/92303955-bb13a500-efb4-11ea-88ac-2c46f3ce7b9f.JPG)
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-![](C:\Users\user\Desktop\안드 사진 2.JPG)
+![안드 두 번째 화면](https://user-images.githubusercontent.com/66874658/92303970-d8e10a00-efb4-11ea-8e94-e881b70b9597.JPG)
 
 
 
