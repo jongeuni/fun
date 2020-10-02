@@ -1,0 +1,17 @@
+body
+{
+	background-image:url(./img/christmas_bg.png);
+	background-repeat:no-repeat;
+	font-family:"맑은 고딕";
+}
+h2
+{
+	color:#ffff00;
+	font-size:28px;
+	font-weight:normal;
+}
+p
+{
+	color:#ffffff;
+	font-size:14px;
+}

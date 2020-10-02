@@ -1,0 +1,48 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    background-color:#f2f0f0;
+    font-family:"맑은 고딕";
+    font-size:12px;
+    color:#444444;
+}
+ul
+{
+    list-style-type:none;
+}
+.clear
+{
+    clear:both;
+}
+#logo
+{
+    padding:30px 0 0 30px;
+    float:left;
+}
+#top_menu
+{
+    margin:40px 10px 0 0;
+    float:right;
+}
+#top_menu li
+{
+    display:inline;
+}
+#main_menu
+{
+    font-size:12px;
+    color:#ffffff;
+    background-color:#4e4c4d;
+    margin-top:15px;
+    padding:12px;
+    text-align:center;
+}
+#main_menu li
+{
+    padding:0 20px 0 20px;
+    display:inline;
+}

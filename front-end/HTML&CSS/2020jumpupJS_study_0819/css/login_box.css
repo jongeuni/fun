@@ -1,0 +1,10 @@
+#login_box
+            {
+                width:200px;
+                height:150px;
+                background-color:#eeeeee;
+                border:solid 1px #aaaaaa;
+                border-radius:15px;
+                box-shadow: 6px 6px 5px #888888;
+                text-align:center;
+            }

@@ -1,0 +1,20 @@
+h2
+			{
+				color:#ff0000;
+				font-family:"맑은 고딕";
+				font-siae:20px;
+			}
+			h3 
+			{
+				color:#0000ff;
+				font-size:16px;
+				font-style:italic;
+				text-decoration:underline;
+			}
+			p 
+			{
+				color:#444444;
+				font-family:"돋움";
+				font-size:14px;
+				line-height:150%;
+			}
