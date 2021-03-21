@@ -10,18 +10,47 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'YetE',
-      theme: ThemeData(
-        primarySwatch: Colors.yellow,
-      ),
+      /*theme: ThemeData(
+        //primarySwatch: Colors.yellow,
+      ),*/
       home: Scaffold(
         appBar: AppBar(
           title:Text('안녕하세요'),
-          leading: Icon(
-            Icons.menu,
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.center, // 컬러 시작점
+                end: Alignment.bottomCenter,
+                colors: <Color>[
+                  Color(0xFF0ED8FF),
+                  Color(0xFFFBFEFF)
+                ]
+              )
+            ),
           ),
+          elevation: 0.0, //앱바 그림자 없애기
+          leading: GestureDetector(
+            onTap: (){},
+            child: Icon(
+            Icons.search,),
+          ),
+          actions: <Widget>[
+            Padding(
+                padding: EdgeInsets.only(right: 20.0),
+                child:GestureDetector(
+                  onTap: (){},
+                  child: Icon(
+                    //Icons.menu,
+                    Icons.more_vert,
+                    size:26.0,
+                  ),
+                )
+            )
+          ],
         ),
-
       )
+
+
     );
   }
 }
