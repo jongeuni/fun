@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yete/font.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),*/
       home: Scaffold(
         appBar: AppBar(
-          title:Text('안녕하세요'),
+          //title:Text('안녕하세요'),
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           leading: GestureDetector(
             onTap: (){},
             child: Icon(
-            Icons.search,),
+            Icons.search ,),
           ),
           actions: <Widget>[
             Padding(
@@ -48,7 +49,26 @@ class MyApp extends StatelessWidget {
             )
           ],
         ),
+        // 앱 바 밑에 쓰는 글귀
+        body: Container(
+          child: Row( // row일 때 가로축 기준 가운데 정렬 column일 때 세로축 기준 가운데 정렬
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text("나도 네 꿈을 꿔",
+                style: TextStyle(
+                  fontFamily: MyFontFamily.love,
+                  fontSize: 20,
+                  height: 1.8
+
+                ),
+
+              )
+            ],
+          ),
+        ),
+
       )
+
 
 
     );
