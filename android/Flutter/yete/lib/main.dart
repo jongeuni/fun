@@ -28,13 +28,12 @@ class MyApp extends StatelessWidget {
                 ]
               )
             ),
+
           ),
           elevation: 0.0, //앱바 그림자 없애기
-          leading: GestureDetector(
-            onTap: (){},
-            child: Icon(
-            Icons.search ,),
-          ),
+
+          leading:  new Icon(Icons.add),
+          title: new Icon(Icons.search, size: 23,), titleSpacing: -3,
           actions: <Widget>[
             Padding(
                 padding: EdgeInsets.only(right: 20.0),
