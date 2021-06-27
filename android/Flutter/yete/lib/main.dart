@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
         //primarySwatch: Colors.yellow,
       ),*/
       home: Scaffold(
+
+
         appBar: AppBar(
           //title:Text('안녕하세요'),
           flexibleSpace: Container(
@@ -28,17 +30,30 @@ class MyApp extends StatelessWidget {
                 ]
               )
             ),
-
           ),
           elevation: 0.0, //앱바 그림자 없애기
 
-          leading:  new Icon(Icons.add),
-          title: new Icon(Icons.search, size: 23,), titleSpacing: -3,
+          leading: IconButton(
+            icon: Icon(Icons.add),
+            onPressed: (){
+
+            },
+          ),
+          title: IconButton(
+            icon: new Icon(Icons.search, size: 23,),
+            onPressed: (){},
+          ),
+          titleSpacing: -3,
+
+          //leading: GestureDetector(onTap: (){print('Tapped!');}, child: Icon(Icons.add),),
+          //title: new Icon(Icons.search, size: 23,), titleSpacing: -3,
+
           actions: <Widget>[
             Padding(
                 padding: EdgeInsets.only(right: 20.0),
                 child:GestureDetector(
                   onTap: (){},
+
                   child: Icon(
                     //Icons.menu,
                     Icons.more_vert,
@@ -48,6 +63,7 @@ class MyApp extends StatelessWidget {
             )
           ],
         ),
+        //drawer: new Drawer(),
         // 앱 바 밑에 쓰는 글귀
         body: Container(
           child: Row( // row일 때 가로축 기준 가운데 정렬 column일 때 세로축 기준 가운데 정렬
@@ -66,6 +82,22 @@ class MyApp extends StatelessWidget {
           ),
         ),
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       )
 
 
@@ -74,8 +106,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
+Row _appBar(){
+  return Row();
+}
 
 class MyHomePage extends StatefulWidget {
+
+
+
   MyHomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
